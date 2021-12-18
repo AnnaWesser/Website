@@ -1,9 +1,8 @@
 ---
-
 title: "Lemongrass"
 image: "bun.jpg"
 output:
-  postcards::jolla
+  postcards::trestles
 ---
 
 
