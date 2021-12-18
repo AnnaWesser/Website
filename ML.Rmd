@@ -1,0 +1,82 @@
+---
+site: distill::distill_website
+title: "Machine Learning"
+---
+
+[**Dimensionality Reduction**]{.ul}
+
+Dimensionality Reduction is a type of Machine Learning that reduce the unnecessary components in a data set so that only the most relevant and important are visible. PCA, Principle Component Analysis is one of the technique that is most commonly use in this particular machine learning to find a better set of data without the unnecessary components or variable to it. This exercise below will demonstrate how the PCA can recognize the important variables from the unimportant one, and reduce the data set in a way that the data will be easier to visualize as its variables are now stay true to the core of the data set. This machine learning can be important to the planning phase of an audit when the clients send too many data that are not necessary relevant to the subject at hand. Auditors could use this technique to narrow down the data set and see a clearer picture of an organization.
+
+1.  [First Code Chuck: Original Code with Two Components]{.ul}
+
+    Step 1: take the 4 different variable and perform the principle component analysis.
+
+```{r}
+library(caret)
+
+dat <- iris
+
+caret.pca <- preProcess(dat[,-5], method="pca",pcaComp=2)
+
+caret.pca
+```
+
+Step 2: Use the result from above to form a new inputs. Notes that dat2 is the data set that will be applying \^2 , and sum it up to find the total variance.
+
+```{r}
+
+dat2 <- predict(caret.pca, dat[,-5])
+
+
+Components2<-apply(dat2,2,sd)^2/sum((apply(dat2,2,sd))^2)
+
+Components2
+```
+
+2.  [Second Code Chunk: 3 Components]{.ul}
+
+    This code has the similar process with the one above, except that the number of components changed from 2 to 3.
+
+```{r}
+library(caret)
+
+dat <- iris
+
+caret.pca <- preProcess(dat[,-5], method="pca",pcaComp=3)
+
+caret.pca
+```
+
+```{r}
+
+dat2 <- predict(caret.pca, dat[,-5])
+
+
+Components3<-apply(dat2,2,sd)^2/sum((apply(dat2,2,sd))^2)
+Components3
+```
+
+3.  [Third Code Chunk: Four Components]{.ul}
+
+    Similar with the second code chunk, this code chunk changed the number of components from 3 to 4.
+
+```{r}
+library(caret)
+
+dat <- iris
+
+caret.pca <- preProcess(dat[,-5], method="pca",pcaComp=4)
+
+caret.pca
+```
+
+```{r}
+
+dat2 <- predict(caret.pca, dat[,-5])
+
+
+Components4<-apply(dat2,2,sd)^2/sum((apply(dat2,2,sd))^2)
+Components4
+```
+
+The end result of these three code chunks shows that as the number of PC increase from 2 to 3 and then to 4, each variable within each PC are reducing to a smaller number each time, which shows the reduction in dimension of a data set, and only showing the important variables that apply to the core of each data set.

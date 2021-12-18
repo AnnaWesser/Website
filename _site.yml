@@ -1,0 +1,38 @@
+name: "."
+title: "Welcome"
+description: |
+  Welcome
+output_dir: "docs"
+navbar:
+  right:
+    - text: "Home"
+      href: Anna.html
+    - text: "CV"
+      href: Resume.html
+    - text: "R Projects"
+      menu:
+        - text: "Rsquare"
+          href: rsq.html
+        - text: "Machine Learning"
+          href: ML.html
+        - text: "Final"
+          href: ABALONEFINAL.html
+    - text: "Blog"
+      menu:
+        - text: "Lemongrass"
+          href: Lemongrass.html
+        - text: "She whom I miss"
+          href: ngoai.html
+        - text: "Who Am I ?"
+          href: pug.html
+        - text: "Aragon"
+          href: KT.html
+
+theme: postcards.css
+
+
+
+
+
+
+output: distill::distill_article

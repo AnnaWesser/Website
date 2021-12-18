@@ -1,0 +1,93 @@
+---
+site: distill::distill_website
+title: "Curriculum Vitae"
+---
+
+<center>
+
+### Anna Wesser
+
+256-479-5413
+
+[thanh.wesser\@gmail.com](mailto:thanh.wesser@gmail.com){.email}
+
+<https://www.linkedin.com/in/thanhwesser/>
+
+</center>
+
+### [**Education**]{.ul}
+
+*Mississippi State University*- *Adkerson School of Accountancy*
+
+**Master of Professional Accountancy, Data Analytic Minor** ---***August
+2021 - August 2022***
+
+GPA: 3.75/4.00
+
+**Bachelor of Accountancy, Spanish Minor** ---***August 2017 - April
+2021***
+
+### [**Work Experience**]{.ul}
+
+#### **Staff Accountant**:
+
+May 2021 -- Present
+
+*Malone, Dirrubo & Co*
+
+*Laconia, NH*
+
+-   Engage in different phases of assurance engagements for
+    non-for-profit organizations and business entities.
+
+-   Research tax law, rules, and regulations and applied them to the
+    preparation of tax returns for individuals and businesses.
+
+-   Caringly worked with small business clients in providing monthly,
+    quarterly, and year-end bookkeeping services.
+
+#### **Audit Intern**:
+
+Jan 2021 -- March 2021
+
+*Crowe, LLP*
+
+*Dallas, TX*
+
+-   Performed essential tie-out procedures on earnings releases and
+    financial statements for both public and private financial
+    institutions.
+
+-   Carried out different audit procedures such as substantive tests,
+    analytical procedures, and control testing on various accounts
+    within the financial statements for financial institutions,
+    healthcare organizations, and constructions companies.
+
+-   Effectively communicated with senior staffs and managers regarding
+    the testing status and assisted them in preparing report work
+    papers.
+
+### [**Campus Involvement**]{.ul}
+
+*Beta Alpha Psi*
+
+-   Tutored students in Financial Accounting and Managerial Accounting.
+
+-   Proctor Accounting Departmental exams.
+
+-   Improve vocational skills through professional meetings, workshops,
+    and networking events.
+
+*Circle K International*
+
+-   Participated in community service projects every month.
+
+-   Developed interpersonal skills through services and fellowship
+    events.
+
+### [**Skills**]{.ul}
+
+**Computer Skills**: Microsoft Office Specialist-Excel (Certified),R
+Studio, Quickbooks, Ultra Tax, Advance Flow, Access, Tableau
+
+**Languages**: English, Vietnamese, Spanish

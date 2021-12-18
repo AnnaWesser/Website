@@ -1,0 +1,49 @@
+---
+site: distill::distill_website
+title: "Rsquare"
+---
+
+## 
+
+*This problem is the most interesting one out of the five that Dr.Hunt went over in class. The reason for that is this problem demonstrate how inaccurate Rsquare is when it come to predicting error by simply changing the range of X. In addition to that, this problem also shows an alternative to Rsquare, MSE, and shows how MSEA is better at predicting error compare to Rsquare.*
+
+1.  **First we will comparing Rsquare and MSE**
+
+A.Rsquare
+
+```{r}
+x <- seq(1,10,length.out = 100)
+set.seed(1)
+y <- 2 + 1.2*x + rnorm(100,0,sd = 0.9)
+mod1 <- lm(y ~ x)
+summary(mod1)$r.squared
+
+```
+
+B.MSE
+
+```{r}
+sum((fitted(mod1) - y)^2)/100
+
+```
+
+2.  [**We will change the range of x and leave everything else as is**]{.ul}
+
+A.Rsquare
+
+```{r}
+x <- seq(1,2,length.out = 100)      
+set.seed(1)
+y <- 2 + 1.2*x + rnorm(100,0,sd = 0.9)
+mod1 <- lm(y ~ x)
+summary(mod1)$r.squared
+
+```
+
+B.MSE
+
+```{r}
+sum((fitted(mod1) - y)^2)/100
+```
+
+[**+The value of RSquare changed while the value of MSE stay the same. Rsquare give an illusion that that first model is better at predicting, when it is not.**]{.ul}

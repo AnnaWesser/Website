@@ -1,0 +1,95 @@
+---
+site: distill::distill_website
+
+title: "Final Project"
+---
+
+<center>
+
+## Classification Model
+
+</center>
+
+```{r}
+knitr::opts_chunk$set(error = TRUE)
+
+ knitr::opts_chunk$set(cache =TRUE)
+```
+
+The data was found from center for Machine Learning and Intelligent System:https://archive.ics.uci.edu/ml/datasets/Abalone
+
+Descriptive statistic give a summary of the sample and the each variable that are relating to that sample.
+
+This data set contains data that are attributing to many variable that are relating to Abalone. I will be predicting the gender of the Abalone.
+
+I chose to use the K-nearest neighbor Classification method to predicting on the gender of the Abalone. This is a supervised learning model that would predicting more data base on a pattern.I think that this can be useful when one would need to use data that has already been obtained to predict future events.
+
+```{r}
+library(caret)
+
+abalone2<-read.csv(file = 'abalone.data')
+```
+
+1.  I renamed the variable in this data set so it is easier to read.
+
+```{r}
+ colnames(abalone2) <- c('Sex', 'Length', 'Diameter', 'Height', 'WholeWeight', 'ShuckedWeight',
+                           'VisceraWeight', 'ShellWeight', 'Rings')
+ 
+ summary(abalone2) 
+```
+
+2.  I then Identified all of the variable that I could choose to predict on.\
+
+```{r}
+sapply(abalone2, class)
+```
+
+3.  Of all these variables above, I will be predicting on the gender of the abalone. I am also splitting the data 50/50
+
+```{r}
+ inTrainSex1 <- createDataPartition(y=abalone2$Sex, p=0.5, list=FALSE)
+   
+```
+
+4.  Grab the data
+
+```{r}
+trainingSex1 <- abalone2[inTrainSex1,]
+    testingSex1 <- abalone2[-inTrainSex1,]
+```
+
+5.  I then applied the standardization to both my training set and my testing set.
+
+```{r}
+preProcValues <- preProcess( trainingSex1, method = c("center", "scale"))
+
+trainTransformed1 <- predict(preProcValues, trainingSex1)
+testTransformed1 <- predict(preProcValues, testingSex1)
+```
+
+Visual of each set are as follows:
+
+```{r}
+psych::describe(trainTransformed1)
+```
+
+```{r}
+psych::describe(testTransformed1)
+```
+
+```{r}
+knn_fit1<-train(Sex~.,
+               data=trainTransformed1,
+               method="knn",
+               tuneGrid=data.frame(k=250))
+
+knn_fit1
+```
+
+```{r}
+knn_pred1<-predict(knn_fit1,testTransformed1)
+confusionMatrix(knn_pred1,as.factor(testTransformed1$Sex))
+```
+
+The result showing that the testing model is actually doing better compare to the train model with the testing model predicting accuracy of .539 while the true model accuracy is only at .535

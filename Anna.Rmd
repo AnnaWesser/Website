@@ -1,0 +1,15 @@
+---
+title: "Anna Wesser"
+image: "Anna.jpg"
+links:
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/thanhwesser"
+  - label: GitHub
+    url: "https://github.com/AnnaWesser"
+  - label: Email
+    url: "mailto:thanh.wesser@gmail.com"
+output:
+  postcards::jolla
+---
+ 
+I am pursuing a Master Degree in Professional Accountancy at Mississippi State University. My short term goal is to be a CPA, and my long term goal is to be a tax attorney. I am currently learning R. I also like to write, play piano, and paint in my free time. 
