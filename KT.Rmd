@@ -1,12 +1,6 @@
 ---
+site: distill::distill_website
 title: "Aragon"
-image: "abc.jpg"
-color1: "#5A59A3"
-color2: "#C66060"
-angle: 130
-
-output:
-  postcards::onofre
 ---
 
 
@@ -62,3 +56,6 @@ Xenophobia exists, although she is their Queen.
 Young Catherine,
 
 Zestful Princess of Wales has died. 
+
+
+![](images/gif.gif){width="100%"}
