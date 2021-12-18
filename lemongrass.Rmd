@@ -3,7 +3,7 @@ site: distill::distill_website
 title: "Lemongrass"
 ---
 
-![](images/bun.jpg){width="100%"}
+
 
 It's the beginning of another average afternoon in the small village of
 Ðồng Nai, Vietnam. The sun shone with a scorching radiance that would
