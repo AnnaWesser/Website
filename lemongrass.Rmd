@@ -1,7 +1,6 @@
 ---
 site: distill::distill_website
 title: "Lemongrass"
-
 ---
 
 ![](images/bun.jpg){width="100%"}
