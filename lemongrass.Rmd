@@ -1,6 +1,9 @@
 ---
-site: distill::distill_website
+
 title: "Lemongrass"
+image: "bun.jpg"
+output:
+  postcards::jolla
 ---
 
 

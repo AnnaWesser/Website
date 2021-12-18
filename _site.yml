@@ -20,7 +20,7 @@ navbar:
     - text: "Blog"
       menu:
         - text: "Lemongrass"
-          href: Lemongrass.html
+          href: lemongrass.html
         - text: "She whom I miss"
           href: ngoai.html
         - text: "Who Am I ?"
