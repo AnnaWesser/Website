@@ -1,11 +1,13 @@
 ---
 title: "Ngoai"
-image: "ngoai.jpg"
+image: "ng1.jpg"
 output:
-  postcards::solana
+  postcards::trestles
 ---
 
-She whom I love, left me give  years ago
+![](images/ng2.jpg){width="50%"}
+
+She whom I love, left me five  years ago
 
 
 Memories remains, I cried with regret
@@ -62,3 +64,5 @@ Should have spend more time with her when I could
 
 
 Grandma's loneliness, now I understood. 
+
+![](images/ng3.jpg){width="50%"}
