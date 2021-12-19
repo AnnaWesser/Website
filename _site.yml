@@ -7,8 +7,6 @@ navbar:
   right:
     - text: "Home"
       href: Anna.html
-    - text: "CV"
-      href: Resume.html
     - text: "R Projects"
       menu:
         - text: "Rsquare"
